@@ -1,0 +1,140 @@
+.container {
+  max-width: 100vw;
+  background-color: var(--white);
+  margin-top: 20px;
+}
+
+.nav {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr min-content;
+  grid-template-rows: repeat(2, min-content);
+  align-items: center;
+
+  &__logo {
+    grid-area: 1/1/2/2;
+
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 25%;
+    }
+
+    h2 {
+      font-family: Grandstander;
+      font-size: 18px;
+      color: var(--color);
+    }
+  }
+
+  &__hamburger {
+    grid-area: 1/3/2/-1;
+    float: right;
+  }
+
+  ul {
+    grid-area: 2/1/-1 / span 3;
+    padding-top: 20px;
+
+    font-family: Inter;
+    font-size: 14px;
+    width: 100%;
+
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+
+    li {
+      border-bottom: 1px solid var(--dark);
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    li:first-child {
+      font-family: Inter Bold;
+      border-top: 2px solid var(--dark);
+      padding-top: 15px;
+    }
+    li:nth-child(3) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        margin-bottom: -7px;
+      }
+    }
+  }
+
+  &__toggle:checked ~ ul {
+    display: flex;
+  }
+
+  @media screen and (min-width: 850px) {
+    max-width: 85%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+      img {
+        max-width: 30%;
+        border: 1px dotted;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+
+    &__hamburger {
+      display: none;
+    }
+
+    ul {
+      padding-top: 0;
+      font-size: 15px;
+      width: 70%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      gap: 25px;
+
+      li {
+        border-bottom: none;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      li:first-child {
+        border-top: none;
+        padding-top: 0;
+      }
+    }
+
+    @media screen and (min-width: 1550px) {
+      max-width: 80%;
+
+      &__logo {
+        img {
+          max-width: 100%;
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+      }
+
+      ul {
+        font-size: 25px;
+
+        gap: 50px;
+      }
+    }
+  }
+}
