@@ -1,0 +1,45 @@
+.steps {
+  background-color: var(--background);
+
+  &__cards {
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    justify-content: center;
+    gap: 100px;
+
+    &--card {
+      max-width: 240px;
+      max-height: 330px;
+      background-color: var(--white);
+      border-radius: 30px;
+      padding-top: 40px;
+      padding-bottom: 30px;
+      box-shadow: 1px 2px 4px var(--dark);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      h4 {
+        font-family: Grandstander;
+        font-size: 22px;
+        color: var(--color);
+      }
+
+      h3 {
+        font-family: Outfit Medium;
+        font-size: 30px;
+        color: var(--font);
+      }
+    }
+    @media screen and (min-width: 1191px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 50px;
+
+    }
+  }
+}

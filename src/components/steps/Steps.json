@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "step": "Step 1",
+    "duty": "Pickup",
+    "image": "images/pick-up.svg"
+  },
+  {
+    "id": "2",
+    "step": "Step 2",
+    "duty": "Wash & Dry",
+    "image": "images/wash&dry.svg"
+  },
+  {
+    "id": "3",
+    "step": "Step 3",
+    "duty": "Fold",
+    "image": "images/fold.svg"
+  },
+  {
+    "id": "4",
+    "step": "Step 4",
+    "duty": "Delivery",
+    "image": "images/delivery.svg"
+  }
+]
