@@ -1,0 +1,137 @@
+.hero {
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  &__right {
+    text-align: center;
+    &--desktop {
+      display: none;
+    }
+  }
+
+  &__left {
+    padding: 100px 100px 70px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+    h5 {
+      font-family: Inter SemiBold;
+      font-size: 16px;
+      background-color: var(--background);
+      max-width: 330px;
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    h1 {
+      font-family: Grandstander Light;
+      font-size: 65px;
+      color: var(--grand);
+      text-align: center;
+    }
+
+    p {
+      font-family: Inter Medium;
+      font-size: 18px;
+      color: var(--grand);
+      text-align: center;
+    }
+
+    &--btn {
+      font-family: Outfit Medium;
+      font-size: 22px;
+      background-color: var(--background);
+      padding: 10px;
+      border-radius: 30px;
+      box-shadow: 1px 3px 7px var(--tiny);
+      min-width: 400px;
+      text-align: center;
+    }
+
+    &--years {
+      display: flex;
+      gap: 70px;
+
+      h2 {
+        font-family: Rasa Bold;
+        font-size: 50px;
+      }
+
+      span {
+        font-family: Inter SemiBold;
+        font-size: 14px;
+        color: var(--tiny);
+        max-width: 60px;
+      }
+
+      &-happy {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+
+    &__right {
+      &--mobile {
+        display: none;
+      }
+      &--desktop {
+        display: block;
+        max-width: 500px;
+      }
+    }
+
+    &__left {
+      padding: 0 100px 20px 100px;
+      gap: 40px;
+      align-items: start;
+
+      h5 {
+        max-width: 330px;
+      }
+
+      h1 {
+        text-align: left;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+
+    @media screen and (min-width: 1550px){
+      &__right {
+      &--desktop {
+        max-width: 700px;
+      }
+    }
+
+    &__left {
+      padding: 35px 300px 20px 200px;
+      gap: 90px;
+      align-items: start;
+
+      h5 {
+        max-width: 330px;
+      }
+
+      h1 {
+        text-align: left;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+    }
+  }
+}
