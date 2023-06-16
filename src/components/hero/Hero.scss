@@ -5,6 +5,9 @@
 
   &__right {
     text-align: center;
+    img {
+      max-width: 500px;
+    }
     &--desktop {
       display: none;
     }
@@ -108,30 +111,30 @@
       }
     }
 
-    @media screen and (min-width: 1550px){
+    @media screen and (min-width: 1550px) {
       &__right {
-      &--desktop {
-        max-width: 700px;
-      }
-    }
-
-    &__left {
-      padding: 35px 300px 20px 200px;
-      gap: 90px;
-      align-items: start;
-
-      h5 {
-        max-width: 330px;
+        &--desktop {
+          max-width: 700px;
+        }
       }
 
-      h1 {
-        text-align: left;
-      }
+      &__left {
+        padding: 35px 300px 20px 200px;
+        gap: 90px;
+        align-items: start;
 
-      p {
-        text-align: left;
+        h5 {
+          max-width: 330px;
+        }
+
+        h1 {
+          text-align: left;
+        }
+
+        p {
+          text-align: left;
+        }
       }
-    }
     }
   }
 }
