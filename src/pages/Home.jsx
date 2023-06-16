@@ -4,6 +4,7 @@ import Hero from "../components/hero/Hero";
 import Steps from "../components/steps/Steps";
 import Services from "../components/services/Services";
 import Single from "../components/sizes/Single";
+import Decide from "../components/decide/Decide";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Steps />
       <Services />
+      <Decide />
     </div>
   );
 }
