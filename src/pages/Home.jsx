@@ -3,8 +3,9 @@ import Nav from "../components/nav/Nav";
 import Hero from "../components/hero/Hero";
 import Steps from "../components/steps/Steps";
 import Services from "../components/services/Services";
-import Single from "../components/sizes/Single";
 import Decide from "../components/decide/Decide";
+import Footer from "../components/footer/Footer";
+import FooterComponent from "../components/footer/FooterComponent";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <Steps />
       <Services />
       <Decide />
+      <Footer />
+      <FooterComponent />
     </div>
   );
 }
