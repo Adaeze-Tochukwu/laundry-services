@@ -17,3 +17,7 @@
 
 // COLOURS
 @import "assets/sass/colours/colours";
+
+body {
+  background-color: var(--container);
+}
